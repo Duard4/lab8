@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="code.js"></script>
+    <title>ЛР7</title>
+</head>
+
+<body>
+    <header>
+        <h1>Лабораторна робота №8</h1>
+        <h2>Виконав студент групи АнД-31 Пархоменко Е. Д.</h2>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li><a href="../lab6/index.html">Лабораторна робота №1</a></li>
+            <li><a href="../lab7/index.html">Лабораторна робота №2</a></li>
+            <li><a class="b-menu_select" href="index.html">Лабораторна робота №3</a></li>
+            <li><a href="#!">Лабораторна робота №4</a></li>
+            <li><a href="#!">Лабораторна робота №5</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navbar-burger">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="flex menu_btn" for="menu-toggle">
+            <span></span>
+        </label>
+        <ul class="navbar__list">
+            <li><a href="../lab6/index.html">Лабораторна робота №1</a></li>
+            <li><a class="b-menu_select" href="index.html">Лабораторна робота №2</a></li>
+            <li><a href="#!">Лабораторна робота №3</a></li>
+            <li><a href="#!">Лабораторна робота №4</a></li>
+            <li><a href="#!">Лабораторна робота №5</a></li>
+        </ul>
+    </nav>
+
+    <h2>Завдання лабораторної</h2>
+    <div class="b-task">
+        <h3>Завдання №1</h3>
+        Дано блок з кнопкою 'закрити блок'. При натисканні на цю кнопку блок
+        повинен зникнути з форми. Кнопка розміщується всередині блоку і повинна
+        зникнути разом з ним. Блоків може бути будь-яка кількість, допускається щоб
+        один з блоків був всередині іншого. Кожен блок закриває своя кнопка.
+        <h3>Завдання №2</h3>
+        Дана таблиця з числами. При натисканні на кнопку в поле введення під
+        таблицею відобразіть числа з таблиці. Виведення виконати через кому в порядку
+        зростання чисел.
+    </div>
+
+    <div id="vanish" class="vanishing_block">
+        <button id="verify" onclick="close_block(this)"">
+            Закрити блок
+        </button>
+        <div id="vanish" class="vanishing_block">
+            <button id="verify" onclick="close_block(this)"">
+                Закрити блок
+            </button>
+            <div id="vanish" class="vanishing_block">
+                <button id="verify" onclick="close_block(this)"">
+                    Закрити блок
+                </button>
+                
+            </div>
+        </div>
+        <div id="vanish" class="vanishing_block">
+            <button id="verify" onclick="close_block(this)"">
+                Закрити блок
+            </button>
+            
+        </div>
+    </div>
+    <table id="num_table">
+        <tr>
+            <td>10</td>
+            <td>4</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>1</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>17</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <button id="verify" onclick="print()" onmouseout="clear_all()">
+        Кнопка
+    </button>
+    <div id="print" type="text"></div>
+</body>
+
+</html>

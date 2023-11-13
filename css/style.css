@@ -1,0 +1,87 @@
+@import url(reset.css);
+@import url(base.css);
+@import url(media.css);
+@import url(nav.css);
+@import url(burger.css);
+body {
+    background-color: var(--bg-color);
+    margin: 5%;
+    width: 90%;
+    height: 100%;
+    color: rgb(167, 205, 255);
+}
+
+header {
+    display: grid;
+    gap: 20%;
+    margin-top: 5%;
+}
+
+table {
+    background-color: var(--table-color);
+    color: var(--table-text-color);
+    border-radius: 5%;
+    width: auto;
+    border-spacing: 10px;
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.b-header {
+    text-align: center;
+    position: relative;
+}
+
+.b-task {
+    font-size: medium;
+    padding: 2%;
+}
+.input_wrapper {
+    margin-bottom: 3%;
+    display: flex;
+    gap: 5%;
+}
+label {
+    justify-content: space-between;
+}
+input {
+    width: 70%;
+    background-color: rgba(108, 58, 154, 0.575);
+}
+#verify {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--btn-text-color);
+    padding: 15px 15px 15px 15px;
+    max-height: 48px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+
+#verify:hover {
+    background-color: var(--active-btn-color);
+    color: var(--active-btn-text-color);
+    transition: all 0.2s ease-out;
+}
+
+.navbar-burger {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+
+.vanishing_block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.navbar-burger .navbar__list {
+    visibility: hidden;
+    gap: 25%;
+    margin: 0 0 -12% 0;
+}
